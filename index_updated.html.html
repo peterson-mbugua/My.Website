@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmCash.com</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P657CRFG');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P657CRFG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <h1>Welcome to AmCash.com</h1>
+  <p>This is a test site for GA4 + GTM tracking.</p>
+
+  <button id="purchaseBtn">Complete Purchase</button>
+  <button id="signupBtn">Sign Up</button>
+
+  <h2>Additional Events</h2>
+  <button id="addPaymentInfoBtn">Add Payment Info</button>
+  <button id="addToCartBtn">Add To Cart</button>
+  <button id="beginCheckoutBtn">Begin Checkout</button>
+  <button id="refundBtn">Refund</button>
+  <button id="removeFromCartBtn">Remove From Cart</button>
+  <button id="selectItemBtn">Select Item</button>
+  <button id="selectPromotionBtn">Select Promotion</button>
+  <button id="viewItemBtn">View Item</button>
+  <button id="viewItemListBtn">View Item List</button>
+  <button id="viewPromotionBtn">View Promotion</button>
+  <button id="addShippingInfoBtn">Add Shipping Info</button>
+
+  <script>
+    // Example events for GA4
+    document.getElementById("purchaseBtn").addEventListener("click", function() {
+      dataLayer.push({
+        event: "purchase",
+        transaction_id: "T12345",
+        value: 49.99,
+        currency: "USD"
+      });
+      alert("Purchase event sent!");
+    });
+
+    document.getElementById("signupBtn").addEventListener("click", function() {
+      dataLayer.push({
+        event: "sign_up",
+        method: "Website Button"
+      });
+      alert("Sign Up event sent!");
+    });
+
+    document.getElementById("addPaymentInfoBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "add_payment_info" });
+      alert("Add Payment Info event sent!");
+    });
+
+    document.getElementById("addToCartBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "add_to_cart" });
+      alert("Add To Cart event sent!");
+    });
+
+    document.getElementById("beginCheckoutBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "begin_checkout" });
+      alert("Begin Checkout event sent!");
+    });
+
+    document.getElementById("refundBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "refund" });
+      alert("Refund event sent!");
+    });
+
+    document.getElementById("removeFromCartBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "remove_from_cart" });
+      alert("Remove From Cart event sent!");
+    });
+
+    document.getElementById("selectItemBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "select_item" });
+      alert("Select Item event sent!");
+    });
+
+    document.getElementById("selectPromotionBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "select_promotion" });
+      alert("Select Promotion event sent!");
+    });
+
+    document.getElementById("viewItemBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "view_item" });
+      alert("View Item event sent!");
+    });
+
+    document.getElementById("viewItemListBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "view_item_list" });
+      alert("View Item List event sent!");
+    });
+
+    document.getElementById("viewPromotionBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "view_promotion" });
+      alert("View Promotion event sent!");
+    });
+
+    document.getElementById("addShippingInfoBtn").addEventListener("click", function() {
+      dataLayer.push({ event: "add_shipping_info" });
+      alert("Add Shipping Info event sent!");
+    });
+  </script>
+</body>
+</html>
